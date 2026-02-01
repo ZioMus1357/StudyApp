@@ -1,4 +1,4 @@
-# Educational Platform – React + Node.js + MongoDB
+# StudyApp – React + Node.js + MongoDB
 
 ## Opis projektu
 
