@@ -33,6 +33,7 @@ Aplikacja została zaprojektowana w sposób modularny, skalowalny i zgodny z dob
 - React
 - TypeScript
 - React Router
+- Vite.js
 - Bootstrap (globalne style)
 - Context API (AuthContext)
 - Fetch wrapper (`apiFetch`)
@@ -174,7 +175,7 @@ Ten model rozwiązuje problem współdzielenia zadań globalnych przy jednoczesn
 
 ## Struktura frontendu
 
-Frontend został zbudowany w React + TypeScript, z wykorzystaniem Context API do zarządzania stanem autoryzacji.
+Frontend został zbudowany w React + TypeScript z użyciem Vite jako narzędzia do bundlowania i uruchamiania aplikacji React oraz z wykorzystaniem Context API do zarządzania stanem autoryzacji.
 
 ```text
 client/src
