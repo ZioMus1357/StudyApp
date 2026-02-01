@@ -62,6 +62,7 @@ project-root/
 ├── server/        # backend (Node.js + Express)
 │
 └── README.md
+```
 
 ## Role użytkowników i autoryzacja
 
@@ -211,6 +212,7 @@ client/src
 ├── api.ts
 ├── App.tsx
 └── main.tsx
+```
 
 ## Routing aplikacji
 
@@ -341,14 +343,14 @@ Model `TaskProgress` zapewnia pełną izolację danych postępu pomiędzy użytk
 cd server
 npm install
 npm run dev
-
+```
 ### Frontend
 
 ```bash
 cd client
 npm install
 npm run dev
-
+```
 ## Możliwe kierunki rozwoju
 
  - quizy i testy automatyczne
