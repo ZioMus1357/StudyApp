@@ -17,15 +17,13 @@ Aplikacja została zaprojektowana w sposób modularny, skalowalny i zgodny z dob
 - Przegląd kategorii i podkategorii
 - Czytanie materiałów edukacyjnych
 - Dostęp do przypisanych zadań
-- Oznaczanie zadań jako wykonane (TaskProgress)
-- Panel użytkownika (Dashboard)
+- Oznaczanie zadań jako wykonane
 
 ### Administrator (ADMIN)
 - Pełne zarządzanie zadaniami
 - Zarządzanie kategoriami i podkategoriami
 - Zarządzanie materiałami dydaktycznymi
 - Dostęp do panelu administracyjnego
-- Kontrola struktury edukacyjnej aplikacji
 
 ---
 
@@ -140,10 +138,6 @@ Pozwala to na tworzenie hierarchii:
 - `createdBy` – użytkownik (admin), który dodał materiał
 - `timestamps`
 
-#### Task
-- `title` – tytuł zadania
-- `description` – opis zadania
-- `category` – kategoria zadania
 
 #### TaskProgress
 - `user` – użytkownik
@@ -191,8 +185,9 @@ client/src
 ├── components/
 │   ├── Navbar.tsx
 │   ├── ProtectedRoute.tsx
-│   ├── MaterialReader.tsx
-│   └── Sidebar.tsx
+│   ├── CategoryForm.tsx
+│   └── CreateMaterialForm.tsx
+│   └── CreateTaskForm.tsx
 │
 ├── pages/
 │   ├── Home.tsx
@@ -202,7 +197,6 @@ client/src
 │   ├── Materials.tsx
 │   ├── Subcategories.tsx
 │   ├── MaterialsBySubcategory.tsx
-│   ├── MaterialView.tsx
 │   └── admin/
 │       ├── AdminHome.tsx
 │       ├── AdminTasks.tsx
@@ -319,7 +313,7 @@ Panel administratora został logicznie podzielony na niezależne sekcje:
 - zarządzanie kategoriami i podkategoriami
 - zarządzanie materiałami dydaktycznymi
 
-Każda sekcja posiada własny widok oraz formularze CRUD. Dzięki temu panel jest czytelny i łatwy w rozbudowie.
+Każda sekcja posiada własny widok. Dzięki temu panel jest czytelny i łatwy w rozbudowie.
 
 ---
 
@@ -358,7 +352,7 @@ npm run dev
  - statystyki postępów użytkownika
  - upload plików (PDF, wideo)
 
-##Status projektu
+## Status projektu
 
 Projekt jest w pełni funkcjonalny, stabilny i gotowy do dalszej rozbudowy.
 Architektura umożliwia łatwe dodawanie nowych modułów oraz skalowanie aplikacji.
